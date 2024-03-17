@@ -73,7 +73,7 @@ args = ["--login"]
 program = "/usr/bin/fish"
 
 [window]
-opacity = 0.9
+opacity = 0.97
 blur = true
 dynamic_padding = true
 
