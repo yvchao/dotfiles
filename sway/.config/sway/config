@@ -121,10 +121,10 @@ bindsym $mod+Shift+Tab workspace prev_on_output
 
 # Switch the current container between different layout styles
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+bindsym $mod+t layout tabbed
 bindsym $mod+e layout toggle split
 
-bindsym $mod+t sticky toggle
+bindsym $mod+Shift+t sticky toggle
 # Make the current focus fullscreen
 bindsym $mod+f fullscreen
 
@@ -207,8 +207,8 @@ default_border pixel 2
 default_floating_border normal
 
 # client.<class> <border> <background> <text> <indicator> <child_border>
-client.focused "#00ff99" "#2b2b2b" "#cccccc" "#00ff99" "#00ff99"
-client.focused_inactive "#44aa44" "#2b2b2b" "#888888" "#44aa44" "#44aa44"
+client.focused "#00ff99" "#00ff99" "#2b2b2b" "#00ff99" "#00ff99"
+client.focused_inactive "#44aa44" "#44aa44" "#2b2b2b" "#44aa44" "#44aa44"
 client.unfocused "#2c2c2c" "#2b2b2b" "#888888" "#000000" "#000000"
 
 #pactl set-sink-volume @DEFAULT_SINK@ +5%
