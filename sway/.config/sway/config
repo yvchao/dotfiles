@@ -227,7 +227,7 @@ bindsym --no-repeat Mod4+i exec ~/.local/bin/setup_workflow
 
 
 
-font pango:Hack Nerd Font 11
+font pango:Hack Nerd Font Mono 11
 set $my_cursor Breeze_Light
 set $my_cursor_size 24
 set $my_icon breeze
