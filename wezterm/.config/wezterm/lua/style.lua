@@ -1,15 +1,15 @@
 ---@diagnostic disable: unused-local, redefined-local, undefined-field
 local wezterm = require("wezterm")
 local helpers = require("lua.helpers")
-local font_size = helpers.os_name == "Linux" and 12 or 13.5
+local font_size = helpers.os_name == "Linux" and 10 or 13.5
 
 local function get_font_fallback()
 	if helpers.os_name == "Linux" then
 		return {
 			-- { family = "Maple Mono NF", harfbuzz_features = { "cv01=1", "cv04=1", "ss01=0", "ss04=0" } },
 			{ family = "Iosevka Term SS14", harfbuzz_features = { "calt=1" } },
-			-- { family = "Hack Nerd Font Mono" },
-			-- { family = "Symbols Nerd Font Mono" },
+			{ family = "Hack Nerd Font Mono" },
+			{ family = "Symbols Nerd Font Mono" },
 			{ family = "Twemoji", assume_emoji_presentation = true },
 		}
 	else
@@ -38,8 +38,8 @@ function module.apply(config)
 
 	-- colors
 	config.window_frame = {
-		-- font = wezterm.font(),
-		font_size = 0.9 * font_size,
+		font = wezterm.font("Roboto"),
+		font_size = 0.8 * font_size,
 		active_titlebar_bg = "#282828",
 		inactive_titlebar_bg = "#282828",
 		-- "#31313f",
